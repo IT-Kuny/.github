@@ -115,9 +115,3 @@ You will find the projects here on Github and [here](https://git.it-kuny.ch/IT-K
 </div>
 
 ###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/IT-Kuny/IT-Kuny/output/snake.svg" alt="Snake animation" />
-
-###
