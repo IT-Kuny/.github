@@ -112,7 +112,7 @@ There is **no 24/7 SLA** and **no marketing team**. **Expect** _honest answers_,
 
 Typical stack and domains represented across these projects:
 
-- **Operating systems:** Linux (Debian, Fedora, Proxmox), with a focus on server and workstation use-cases  
+- **Operating systems:** Linux (Fedora, Debian, Proxmox), with a focus on server and workstation use-cases  
 - **Infrastructure:** Proxmox VE, containers, homelab automation, backup and recovery workflows  
 - **Security & hardening:** Kernel configuration, IOMMU/VFIO, TLS automation, reduced attack surface  
 - **Scripting & tooling:** Bash, Python, TypeScript/Next.js, plus packaging for Debian/RPM where useful  
