@@ -10,8 +10,12 @@ Many of their repositories are useful for individuals looking to establish secur
 
 You will find the projects here on Github and [here](https://git.it-kuny.ch/IT-Kuny/)
 
-<br clear="both">
 
+
+Also some tools and operating systems we using on a daily base, more or less ;)
+
+---
+<br clear="both">
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg" height="30" alt="fedora logo"  />
   <img width="12" />
@@ -115,3 +119,4 @@ You will find the projects here on Github and [here](https://git.it-kuny.ch/IT-K
 </div>
 
 ###
+---
