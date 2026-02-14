@@ -124,6 +124,8 @@ If you care about owning your infrastructure, keeping control over your data, an
 
 ## More projects & contributions
 
+**Personal GitHub:** [@0n1cOn3](https://github.com/0n1cOn3) — Security tools, open-source contributions, FluxER (667⭐), NSO-Blacklist, and more.
+
 Additional internal tools, Ansible roles, and more live on the self-hosted Git:
 
 - 🔗 **Forgejo:** https://git.it-kuny.ch *(currently internal-only; public exposure under evaluation)*  
