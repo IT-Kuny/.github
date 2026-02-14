@@ -137,7 +137,7 @@ For anything security-sensitive, please use a private contact channel instead of
 
 ## Tools, platforms & ecosystem
 
-Some tools and operating systems used on a daily basis (more or less):
+Tools and technologies I work with — some daily, some project-based:
 
 <br clear="both">
 <div align="center">
