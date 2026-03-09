@@ -48,6 +48,7 @@ GitHub is used for public tooling, kernels, and upstream collaboration (and some
 | ---------- | ----------- |
 | [`chrooty`](https://github.com/IT-Kuny/chrooty) | Rescue and chroot utility that automates recovery workflows. Handles LVM, ZFS, Btrfs subvolumes, EFI mounts, logging, and a plugin-driven hook system for pre/post-chroot actions. Designed for “fix this system now” scenarios on modern Linux distributions. |
 | [`Proxmox-Sync-Wildcard`](https://github.com/IT-Kuny/Proxmox-Sync-Wildcard) | Bash automation to securely pull a wildcard TLS certificate from a remote CA / reverse proxy host and deploy it into a Proxmox VE cluster. Includes full store backup, atomic replacement, permission fixes, and minimal service impact (reloads only `pveproxy`). |
+| [`dnf-pkgsync`](https://github.com/IT-Kuny/dnf-pkgsync) | Helper script to export and restore package sets between DNF-based systems (migration/bootstrap use-cases). |
 
 These projects are designed to be dropped into real environments: rescue media, Proxmox clusters, and automation pipelines.
 
@@ -58,6 +59,8 @@ These projects are designed to be dropped into real environments: rescue media, 
 | Repository | Scope | Focus |
 |-----------|-------|-------|
 | [`Thinkpad-P16S-Kernel`](https://github.com/IT-Kuny/Thinkpad-P16S-Kernel) | Opinionated Linux kernel profile for the Lenovo ThinkPad P16s Gen4. Keeps NVMe-only internal storage, USB BOT/UAS disks, USB4/TB4, graphics, audio, camera, LAN, WLAN, BT, and trims unused SATA/SAS/FC/iSCSI paths to reduce complexity and attack surface. | Hardware-specific kernel config, IOMMU, VFIO, modern workstation hardening. |
+| [`HPE-G8-G9-Fan-Controller`](https://github.com/IT-Kuny/HPE-G8-G9-Fan-Controller) | Fan controller stack for modded iLO4 servers on HPE Gen8/Gen9 platforms. | Practical fan control UI/service for homelab ProLiant systems. |
+| [`HPE-Proliant-G8-G9-Autofan-Controller`](https://github.com/IT-Kuny/HPE-Proliant-G8-G9-Autofan-Controller) | Standalone thermal controller for HPE ProLiant Gen8/Gen9 with per-sensor curves and adaptive cooling logic. | Autonomous thermal management for quiet but safe operation. |
 
 This is not a generic “one size fits all” kernel – it is a documented profile for a very specific platform and threat model.
 
@@ -68,7 +71,7 @@ This is not a generic “one size fits all” kernel – it is a documented prof
 | Repository | Origin | Purpose |
 |-----------|--------|---------|
 | [`IOMMU-Report`](https://github.com/IT-Kuny/IOMMU-Report) | Fork of `mkoreneff/iommu_info_generate` | Curses-based TUI to inspect local platform details and submit IOMMU topology data to [iommu.info](https://iommu.info). Includes API health checks, vendor probes, board existence checks, chunked upload flow, and throttling that respects `Retry-After`. |
-| [`ilo4-fan-controller`](https://github.com/IT-Kuny/ilo4-fan-controller) | Fork of `DavidIlie/ilo4-fan-controller` | Next.js UI and Dockerized service to control fan speeds on modded iLO4-based HPE Gen8 servers. Talks to iLO4 over SSH, exposes presets and dynamic fan layouts, and is homelab-friendly when paired with an auth proxy. |
+| [`HPE-G8-G9-Fan-Controller`](https://github.com/IT-Kuny/HPE-G8-G9-Fan-Controller) | Fork/continuation in the iLO4 fan-control ecosystem | Next.js UI and Dockerized service to control fan speeds on modded iLO4-based HPE Gen8/Gen9 servers. Talks to iLO4 over SSH, exposes presets and dynamic fan layouts, and is homelab-friendly when paired with an auth proxy. |
 
 These forks are kept close to upstream while adding homelab-centric operational experience.
 
