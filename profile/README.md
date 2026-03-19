@@ -15,11 +15,11 @@ Infrastructure, automation, and self-hosting with a strong bias towards privacy,
 
 IT-Kuny is primarily a one-person operation.
 
-The work sits somewhere between homelab engineering in facto SMB (and maybe further...) and real-world support:
+The work sits somewhere between previously homelab, nowadays private data center engineering and SMB,  (and maybe further...) and real-world support:
 
 - Fixing everyday issues for friends, family, and close contacts (smartphones, PCs, tablets, NAS, Gaming consoles, TVs, TV Box's, Router/Modem, Security cameras etc.)  
 - Acting as a consultant and “second brain” for new systems, network redesigns, and infrastructure overhauls  
-- Building small tools and workflows when existing solutions are too heavy, opaque, or vendor-locked  
+- Building tools and workflows when existing solutions are too heavy, opaque, or vendor-locked  
 
 Most tooling here started as _"we have a real problem to solve right now"_ and was later cleaned up and published.
 
@@ -82,7 +82,7 @@ These forks are kept close to upstream while adding homelab-centric operational 
 IT-Kuny is not a large service provider. It is mainly:
 
 - Best-effort support for friends, family, and close contacts and for those who want to get in touch with
-- Help for small environments that share the same philosophy (primarly focused on self-hosted, privacy-focused, realistic budgets) and other environment obviously too
+- Help for small environments that share the same philosophy (primarly focused on privacy-focused, realistic budgets) and other environment obviously too
 
 Typical support activities include:
 
