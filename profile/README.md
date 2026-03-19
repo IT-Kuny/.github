@@ -3,7 +3,7 @@
 Infrastructure, automation, and self-hosting with a strong bias towards privacy, control, and Linux-first solutions.
 
 - 🇨🇭 Located in Switzerland  
-- Focus: homelab and SMB infrastructure, Proxmox, kernel hardening, hardware-aware tooling and more
+- Focus: homelab, private data center and SMB infrastructure, Proxmox, kernel hardening, hardware-aware tooling and more
 - Philosophy: sustainable, vendor-independent IT with re-use of existing hardware where it makes sense  
 
 **Website:** https://it-kuny.ch  
