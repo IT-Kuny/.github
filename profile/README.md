@@ -2,12 +2,12 @@
 
 Infrastructure, automation, and self-hosting with a strong bias towards privacy, control, and Linux-first solutions.
 
-- 🇨🇭 Located in Switzerland  
+- 🇨🇭 Located in Switzerland
 - Focus: AI Agents, homelab, private data center and SMB infrastructure, Proxmox, kernel hardening, hardware-aware tooling and more
-- Philosophy: sustainable, vendor-independent IT with re-use of existing hardware where it makes sense  
+- Philosophy: sustainable, vendor-independent IT with re-use of existing hardware where it makes sense
 
-**Website:** https://it-kuny.ch  
-**Self-hosted Git:** https://git.it-kuny.ch *(currently not exposed to the public)*  
+**Website:** https://it-kuny.ch
+**Self-hosted Git:** https://git.it-kuny.ch *(currently not exposed to the public)*
 
 ---
 
@@ -17,15 +17,15 @@ IT-Kuny is primarily a one-person operation.
 
 The work sits somewhere between previously homelab, nowadays private data center engineering and SMB,  (and maybe further...) and real-world support:
 
-- Fixing everyday issues for friends, family, and close contacts (smartphones, PCs, tablets, NAS, Gaming consoles, TVs, TV Box's, Router/Modem, Security cameras etc.)  
-- Acting as a consultant and “second brain” for new systems, network redesigns, and infrastructure overhauls  
-- Building tools and workflows when existing solutions are too heavy, opaque, or vendor-locked  
+- Fixing everyday issues for friends, family, and close contacts (smartphones, PCs, tablets, NAS, Gaming consoles, TVs, TV Box's, Router/Modem, Security cameras etc.)
+- Acting as a consultant and "second brain" for new systems, network redesigns, and infrastructure overhauls
+- Building tools and workflows when existing solutions are too heavy, opaque, or vendor-locked
 
 Most tooling here started as _"we have a real problem to solve right now"_ and was later cleaned up and published.
 
 ---
 
-## What you’ll find here
+## What you'll find here
 
 This organization collects tools and configurations that help you:
 
@@ -35,7 +35,7 @@ This organization collects tools and configurations that help you:
 - Make hardware behaviour more predictable (IOMMU, iLO fans, kernel profiles)
 - Recover broken systems quickly (chroot, storage detection, bootfix)
 
-Most of the daily-driver projects live on a self-hosted Forgejo instance on a private distributed server farm.  
+Most of the daily-driver projects live on a self-hosted Forgejo instance on a private distributed server farm.
 GitHub is used for public tooling, kernels, and upstream collaboration (and sometimes for experiments that are useful to others).
 
 ---
@@ -46,7 +46,7 @@ GitHub is used for public tooling, kernels, and upstream collaboration (and some
 
 | Repository | Description |
 | ---------- | ----------- |
-| [`chrooty`](https://github.com/IT-Kuny/chrooty) | Rescue and chroot utility that automates recovery workflows. Handles LVM, ZFS, Btrfs subvolumes, EFI mounts, logging, and a plugin-driven hook system for pre/post-chroot actions. Designed for “fix this system now” scenarios on modern Linux distributions. |
+| [`chrooty`](https://github.com/IT-Kuny/chrooty) | Rescue and chroot utility that automates recovery workflows. Handles LVM, ZFS, Btrfs subvolumes, EFI mounts, logging, and a plugin-driven hook system for pre/post-chroot actions. Designed for "fix this system now" scenarios on modern Linux distributions. |
 | [`Proxmox-Sync-Wildcard`](https://github.com/IT-Kuny/Proxmox-Sync-Wildcard) | Bash automation to securely pull a wildcard TLS certificate from a remote CA / reverse proxy host and deploy it into a Proxmox VE cluster. Includes full store backup, atomic replacement, permission fixes, and minimal service impact (reloads only `pveproxy`). |
 | [`dnf-pkgsync`](https://github.com/IT-Kuny/dnf-pkgsync) | Helper script to export and restore package sets between DNF-based systems (migration/bootstrap use-cases). |
 
@@ -61,8 +61,9 @@ These projects are designed to be dropped into real environments: rescue media, 
 | [`Thinkpad-P16S-Kernel`](https://github.com/IT-Kuny/Thinkpad-P16S-Kernel) | Opinionated Linux kernel profile for the Lenovo ThinkPad P16s Gen4. Keeps NVMe-only internal storage, USB BOT/UAS disks, USB4/TB4, graphics, audio, camera, LAN, WLAN, BT, and trims unused SATA/SAS/FC/iSCSI paths to reduce complexity and attack surface. | Hardware-specific kernel config, IOMMU, VFIO, modern workstation hardening. |
 | [`HPE-G8-G9-Fan-Controller`](https://github.com/IT-Kuny/HPE-G8-G9-Fan-Controller) | Fan controller stack for modded iLO4 servers on HPE Gen8/Gen9 platforms. | Practical fan control UI/service for homelab ProLiant systems. |
 | [`HPE-Proliant-G8-G9-Autofan-Controller`](https://github.com/IT-Kuny/HPE-Proliant-G8-G9-Autofan-Controller) | Standalone thermal controller for HPE ProLiant Gen8/Gen9 with per-sensor curves and adaptive cooling logic. | Autonomous thermal management for quiet but safe operation. |
+| [`UGREEN-DXP-FAN-NAS-Driver`](https://github.com/IT-Kuny/UGREEN-DXP-FAN-NAS-Driver) | Kernel driver for the system fan controller on UGREEN DXP NAS devices. Enables proper fan speed management under Linux where no official driver exists. | Hardware driver, NAS platform support, Linux kernel integration. |
 
-This is not a generic “one size fits all” kernel – it is a documented profile for a very specific platform and threat model.
+This is not a generic "one size fits all" kernel - it is a documented profile for a very specific platform and threat model.
 
 ---
 
@@ -72,8 +73,17 @@ This is not a generic “one size fits all” kernel – it is a documented prof
 |-----------|--------|---------|
 | [`IOMMU-Report`](https://github.com/IT-Kuny/IOMMU-Report) | Fork of `mkoreneff/iommu_info_generate` | Curses-based TUI to inspect local platform details and submit IOMMU topology data to [iommu.info](https://iommu.info). Includes API health checks, vendor probes, board existence checks, chunked upload flow, and throttling that respects `Retry-After`. |
 | [`HPE-G8-G9-Fan-Controller`](https://github.com/IT-Kuny/HPE-G8-G9-Fan-Controller) | Fork/continuation in the iLO4 fan-control ecosystem | Next.js UI and Dockerized service to control fan speeds on modded iLO4-based HPE Gen8/Gen9 servers. Talks to iLO4 over SSH, exposes presets and dynamic fan layouts, and is homelab-friendly when paired with an auth proxy. |
+| [`pvekclean`](https://github.com/IT-Kuny/pvekclean) | Fork of `jordanhillis/pvekclean` | Proxmox VE kernel cleanup tool. Consolidates community PRs and fixes 6 open upstream issues: ZFS `/boot` support, UEFI/systemd-boot detection, complete header removal, metapackage filtering, and stale dpkg state after purge. Bumped to v2.1.0. |
 
 These forks are kept close to upstream while adding homelab-centric operational experience.
+
+---
+
+### In Development (not yet public)
+
+| Project | Description |
+|---------|-------------|
+| `AISec` | AI-driven security agent for firewall integration. Detects anomalous behaviour, stops known threats instantly, and blocks attackers automatically. Currently in active development — not yet publicly released. |
 
 ---
 
@@ -86,26 +96,26 @@ IT-Kuny is not a large service provider. It is mainly:
 
 Typical support activities include:
 
-- **End-user systems & apps**  
+- **End-user systems & apps**
   Fixing issues with Apps (e.g. Google Play, Samsung Browser, iOS App sideloading via XCode, Wireguard), mail clients, office suites, and everyday desktop workflows on Windows, macOS, and Linux. And also for iOS/iPadOS and Android/HarmonyOS.
 
-- **Client devices**  
+- **Client devices**
   Troubleshooting and setting up smartphones and tablets (Android, iOS/iPadOS), including accounts, apps, backups, and security and privacy.
 
-- **Storage & NAS systems**  
+- **Storage & NAS systems**
   Deploying and maintaining NAS devices (e.g. Synology, UGREEN and similar), ACL permissions, shared folders, remote access, and backup strategies.
 
-- **Networks & small infra**  
+- **Networks & small infra**
   Designing or restructuring small networks (home and small office), including Wi-Fi, routing, VPN, DNS, remote access, and pragmatic security baselines.
 
-- **Consulting & planning**  
-  Acting as a sounding board for new systems, hardware refreshes, or complete infrastructure overhauls — from “_What should I buy?_” to “_How do we migrate without losing data and while being live?_”.
+- **Consulting & planning**
+  Acting as a sounding board for new systems, hardware refreshes, or complete infrastructure overhauls - from "_What should I buy?_" to "_How do we migrate without losing data and while being live?_".
 
 Language-wise:
 
-- 🇨🇭 Swissgerman – native 
-- 🇩🇪 German – native  
-- 🇬🇧 English – fluent  
+- 🇨🇭 Swissgerman - native
+- 🇩🇪 German - native
+- 🇬🇧 English - fluent
 
 There is **no 24/7 SLA** and **no marketing team**. **Expect** _honest answers_, _conservative designs_, and solutions **you** can actually maintain yourself.
 
@@ -115,11 +125,11 @@ There is **no 24/7 SLA** and **no marketing team**. **Expect** _honest answers_,
 
 Typical stack and domains represented across these projects:
 
-- **Operating systems:** Linux (Fedora, Debian, Proxmox), with a focus on server and workstation use-cases  
-- **Infrastructure:** Proxmox VE, containers, homelab automation, backup and recovery workflows  
-- **Security & hardening:** Kernel configuration, IOMMU/VFIO, TLS automation, reduced attack surface  
-- **Scripting & tooling:** Bash, Python, TypeScript/Next.js, plus packaging for Debian/RPM where useful  
-- **Hardware:** ThinkPad platforms, HPE ProLiant Gen8, **3× Synology NAS, 1× UGREEN NAS**, IOMMU-capable boards and virtualization hosts  
+- **Operating systems:** Linux (Fedora, Debian, Proxmox), with a focus on server and workstation use-cases
+- **Infrastructure:** Proxmox VE, containers, homelab automation, backup and recovery workflows
+- **Security & hardening:** Kernel configuration, IOMMU/VFIO, TLS automation, reduced attack surface
+- **Scripting & tooling:** Bash, Python, TypeScript/Next.js, plus packaging for Debian/RPM where useful
+- **Hardware:** ThinkPad platforms, HPE ProLiant Gen8, **3× Synology NAS, 1× UGREEN NAS**, IOMMU-capable boards and virtualization hosts
 
 If you care about owning your infrastructure, keeping control over your data, and understanding what your hardware is actually doing, you are in the right place.
 
@@ -127,20 +137,20 @@ If you care about owning your infrastructure, keeping control over your data, an
 
 ## More projects & contributions
 
-**Personal GitHub:** [@0n1cOn3](https://github.com/0n1cOn3) — Security tools, open-source contributions, FluxER (667⭐), NSO-Blacklist, and more.
+**Personal GitHub:** [@0n1cOn3](https://github.com/0n1cOn3) - Security tools, open-source contributions, FluxER (667⭐), NSO-Blacklist, and more.
 
 Additional internal tools, Ansible roles, and more live on the self-hosted Git:
 
-- 🔗 **Forgejo:** https://git.it-kuny.ch *(currently internal-only; public exposure under evaluation)*  
+- 🔗 **Forgejo:** https://git.it-kuny.ch *(currently internal-only; public exposure under evaluation)*
 
-Issues and pull requests are welcome on the public repositories here on GitHub.  
+Issues and pull requests are welcome on the public repositories here on GitHub.
 For anything security-sensitive, please use a private contact channel instead of opening a public issue.
 
 ---
 
 ## Tools, platforms & ecosystem
 
-Tools and technologies I work with — some daily, some project-based:
+Tools and technologies I work with - some daily, some project-based:
 
 <br clear="both">
 <div align="center">
@@ -244,7 +254,7 @@ Tools and technologies I work with — some daily, some project-based:
 
 🌐 Website:
 
-https://it-kuny.ch  
+https://it-kuny.ch
 
 💬 Telegram:
 <br clear="both">
