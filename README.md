@@ -114,7 +114,8 @@ Typical stack and domains represented across these projects:
 
 - **Operating systems:** Linux (Fedora, Debian, Proxmox), with a focus on server and workstation use-cases  
 - **Infrastructure:** Proxmox VE, containers, homelab automation, backup and recovery workflows  
-- **Security & hardening:** Kernel configuration, IOMMU/VFIO, TLS automation, reduced attack surface  
+- **Monitoring & observability:** Grafana, InfluxDB, Prometheus, Loki, Zabbix, Wazuh SIEM, Akvorado (NetFlow/IPFIX), n8n automation — covering metrics, logs, traces, flow data, security events, and alerting across the full homelab/SMB stack  
+- **Security & hardening:** Kernel configuration, IOMMU/VFIO, TLS automation, reduced attack surface, YARA rules, CVE tracking  
 - **Scripting & tooling:** Bash, Python, TypeScript/Next.js, plus packaging for Debian/RPM where useful  
 - **Hardware:** ThinkPad platforms, HPE ProLiant Gen8, **3× Synology NAS, 1× UGREEN NAS**, IOMMU-capable boards and virtualization hosts  
 
@@ -219,6 +220,26 @@ Some tools and operating systems used on a daily basis (more or less):
 
 ---
 
+</div>
+
+###
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" height="30" alt="prometheus logo"  />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white&style=flat-square" height="30" alt="grafana logo"  />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/InfluxDB-22ADF6?logo=influxdb&logoColor=white&style=flat-square" height="30" alt="influxdb logo"  />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/Zabbix-940F1A?logo=zabbix&logoColor=white&style=flat-square" height="30" alt="zabbix logo"  />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/Loki-F2A900?logo=grafana&logoColor=white&style=flat-square" height="30" alt="loki logo"  />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/Wazuh-SIEM-005571?style=flat-square" height="30" alt="wazuh logo"  />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/Akvorado-NetFlow-1F6FEB?style=flat-square" height="30" alt="akvorado logo"  />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/n8n-EA4B71?logo=n8n&logoColor=white&style=flat-square" height="30" alt="n8n logo"  />
 </div>
 
 ###
