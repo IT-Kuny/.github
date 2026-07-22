@@ -83,7 +83,7 @@ These forks are kept close to upstream while adding homelab-centric operational 
 
 | Project | Description |
 |---------|-------------|
-| `AISec` | AI-driven security agent for firewall integration. Detects anomalous behaviour, stops known threats instantly, and blocks attackers automatically. Currently in active development — not yet publicly released. |
+| `AISec` | AI-driven firewall security suite  with integration for existing firewalls or even as dedicated machine. Detects anomalous behaviour, stops known threats instantly, and blocks attackers automatically. Currently in active development — not yet publicly released. |
 
 ---
 
