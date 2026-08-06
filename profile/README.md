@@ -3,7 +3,7 @@
 Infrastructure, automation, and self-hosting with a strong bias towards privacy, control, and Linux-first solutions.
 
 - 🇨🇭 Located in Switzerland
-- Focus: AI Agents, homelab, private data center and SMB infrastructure, Proxmox, kernel hardening, hardware-aware tooling and more
+- Focus: AI Agent agnostic private (like-a-ISP & NOC) data center infrastructure, Proxmox, kernel hardening, hardware-aware tooling and more
 - Philosophy: sustainable, vendor-independent IT with re-use of existing hardware where it makes sense
 
 **Website:** https://it-kuny.ch
@@ -13,9 +13,9 @@ Infrastructure, automation, and self-hosting with a strong bias towards privacy,
 
 ## About IT-Kuny
 
-IT-Kuny is primarily a one-person operation.
+IT-Kuny is primarily a one-person operation in cooperation with self trained AI agent called Jarvis.
 
-The work sits somewhere between previously homelab, nowadays private data center engineering and SMB,  (and maybe further...) and real-world support:
+The work sits somewhere between previously homelab, nowadays private data center engineering and NOC/ISP,  (and maybe further...) and real-world support:
 
 - Fixing everyday issues for friends, family, and close contacts (smartphones, PCs, tablets, NAS, Gaming consoles, TVs, TV Box's, Router/Modem, Security cameras etc.)
 - Acting as a consultant and "second brain" for new systems, network redesigns, and infrastructure overhauls
