@@ -5,6 +5,7 @@ Infrastructure, automation, and self-hosting with a strong bias towards privacy,
 - 🇨🇭 Located in Switzerland
 - Focus: AI Agent agnostic private (like-a-ISP & NOC) data center infrastructure, Proxmox, kernel hardening, hardware-aware tooling and more
 - Philosophy: sustainable, vendor-independent IT with re-use of existing hardware where it makes sense
+- Security: defense-in-depth, CVE tracking, SIEM, kernel-level mitigation — because "it works" isn't good enough
 
 **Website:** https://it-kuny.ch
 **Self-hosted Git:** https://git.it-kuny.ch *(currently not exposed to the public)*
@@ -84,6 +85,14 @@ These forks are kept close to upstream while adding homelab-centric operational 
 | Project | Description |
 |---------|-------------|
 | `AISec` | AI-driven firewall security suite  with integration for existing firewalls or even as dedicated machine. Detects anomalous behaviour, stops known threats instantly, and blocks attackers automatically. Currently in active development — not yet publicly released. |
+
+---
+
+## Communities
+
+- **Nosial (n64.cc)** — Member, infrastructure contributor
+- **Neternels** — Contributor to custom kernel builds for Kali NetHunter
+- **Private Security Research Group** — knowledge sharing with industry practitioners, including Kali NetHunter Core Team members
 
 ---
 
