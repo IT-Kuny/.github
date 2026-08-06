@@ -64,7 +64,7 @@ These projects are designed to be dropped into real environments: rescue media, 
 
 These projects target real virtualization environments — from single-host Proxmox to multi-node clusters with monitoring, SIEM, and automation pipelines.
 
-> **Collaboration note:** The community network backbone (LIXP fleet — FreeBSD/FRR routing, VyOS/IPSec) is designed and operated by a community partner. IT-Kuny contributes the WireGuard overlay and the monitoring/NOC stack (Akvorado, Grafana, Zabbix) that runs on top. The fleet itself is not an IT-Kuny product.
+> **Collaboration note:** The community network backbone (LIXP fleet — FreeBSD/FRR routing, VyOS/IPSec) is designed and operated by a community partner. IT-Kuny hosts its own WireGuard overlay on top of it and the monitoring/NOC stack (Akvorado, Grafana, Zabbix) that runs on top. The fleet itself is not an IT-Kuny product.
 
 ---
 
