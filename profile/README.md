@@ -55,6 +55,17 @@ These projects are designed to be dropped into real environments: rescue media, 
 
 ---
 
+### Infrastructure & Automation
+
+| Repository | Description |
+| ---------- | ----------- |
+| [`PDC-stack`](https://github.com/IT-Kuny/PDC-stack) | Self-hosted DevOps monorepo for private data center operations. Bundles 9 services (n8n, Grafana + InfluxDB, Zabbix, Wazuh, nginx ECH, UPS Dashboard, WGDashboard, Falco, Akvorado + ClickHouse) with shared networks, volumes, and documentation. Designed for Proxmox/Debian hosts with ZFS storage. |
+| [`ThinClient-For-Proxmox`](https://github.com/IT-Kuny/ThinClient-For-Proxmox) | Thin client orchestration for Proxmox VE environments. Multi-user capable with OOBE, boot-wait phases, SPICE connect, and PAM-based SSO via the companion `pam_proxmox` module. Currently in active development. *(private)* |
+
+These projects target real virtualization environments — from single-host Proxmox to multi-node clusters with monitoring, SIEM, and automation pipelines.
+
+---
+
 ### Hardware- and platform-specific work
 
 | Repository | Scope | Focus |
@@ -146,7 +157,9 @@ If you care about owning your infrastructure, keeping control over your data, an
 
 ## More projects & contributions
 
-**Personal GitHub:** [@0n1cOn3](https://github.com/0n1cOn3) - Security tools, open-source contributions, FluxER (667⭐), NSO-Blacklist, and more.
+**Personal GitHub:** [@0n1cOn3](https://github.com/0n1cOn3) - Security tools, open-source contributions, FluxER (681⭐), NSO-Blacklist, and more.
+
+**Collaborations:** Contributor to [291-Group/LAN-Orangutan](https://github.com/291-Group/LAN-Orangutan) (496⭐) — a lightweight network scanner with persistent device labeling, multi-network support, and Tailscale integration.
 
 Additional internal tools, Ansible roles, and more live on the self-hosted Git:
 
