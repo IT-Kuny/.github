@@ -61,6 +61,7 @@ These projects are designed to be dropped into real environments: rescue media, 
 | ---------- | ----------- |
 | [`PDC-stack`](https://github.com/IT-Kuny/PDC-stack) | Self-hosted DevOps monorepo for private data center operations. Bundles 9 services (n8n, Grafana + InfluxDB, Zabbix, Wazuh, nginx ECH, UPS Dashboard, WGDashboard, Falco, Akvorado + ClickHouse) with shared networks, volumes, and documentation. Designed for Proxmox/Debian hosts with ZFS storage. |
 | [`ThinClient-For-Proxmox`](https://github.com/IT-Kuny/ThinClient-For-Proxmox) | Thin client orchestration for Proxmox VE environments. Multi-user capable with OOBE, boot-wait phases, SPICE connect, and PAM-based SSO via the companion `pam_proxmox` module. Currently in active development. *(private)* |
+| [`AISec`](https://github.com/IT-Kuny/AISec) | AI-powered network guardian for firewalls — detects known threats, anomalous behaviour, and blocks attackers automatically. Four-layer defense: signature matching, ML anomaly detection, pattern recognition, automatic response. *In active development, source code not yet published.* |
 
 These projects target real virtualization environments — from single-host Proxmox to multi-node clusters with monitoring, SIEM, and automation pipelines.
 
@@ -87,19 +88,13 @@ This is not a generic "one size fits all" kernel - it is a documented profile fo
 |-----------|--------|---------|
 | [`IOMMU-Report`](https://github.com/IT-Kuny/IOMMU-Report) | Fork of `mkoreneff/iommu_info_generate` | Curses-based TUI to inspect local platform details and submit IOMMU topology data to [iommu.info](https://iommu.info). Includes API health checks, vendor probes, board existence checks, chunked upload flow, and throttling that respects `Retry-After`. |
 | [`HPE-G8-G9-Fan-Controller`](https://github.com/IT-Kuny/HPE-G8-G9-Fan-Controller) | Fork/continuation in the iLO4 fan-control ecosystem | Next.js UI and Dockerized service to control fan speeds on modded iLO4-based HPE Gen8/Gen9 servers. Talks to iLO4 over SSH, exposes presets and dynamic fan layouts, and is homelab-friendly when paired with an auth proxy. |
-| [`pvekclean`](https://github.com/IT-Kuny/pvekclean) | Fork of `jordanhillis/pvekclean` | Proxmox VE kernel cleanup tool. Consolidates community PRs and fixes 6 open upstream issues: ZFS `/boot` support, UEFI/systemd-boot detection, complete header removal, metapackage filtering, and stale dpkg state after purge. Bumped to v2.1.0. |
+| [`pvekclean`](https://github.com/IT-Kuny/pvekclean) | Fork of `jordanhillis/pvekclean` | Proxmox VE kernel cleanup tool. Consolidates community PRs and fixes 6 open upstream issues: ZFS `/boot` support, UEFI/systemd-boot detection, complete header removal, metapackage filtering, and stale dpkg state after purge. Added semantic version comparison for update checks (PR #2). v2.1.0. |
 
 These forks are kept close to upstream while adding homelab-centric operational experience.
 
 ---
 
-### In Development (not yet public)
 
-| Project | Description |
-|---------|-------------|
-| `AISec` | AI-driven firewall security suite  with integration for existing firewalls or even as dedicated machine. Detects anomalous behaviour, stops known threats instantly, and blocks attackers automatically. Currently in active development — not yet publicly released. |
-
----
 
 ## Communities
 
