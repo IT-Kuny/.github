@@ -152,11 +152,43 @@ If you care about owning your infrastructure, keeping control over your data, an
 
 ---
 
-## More projects & contributions
+## Contributions & upstream work
 
-**Personal GitHub:** [@0n1cOn3](https://github.com/0n1cOn3) - Security tools, open-source contributions, FluxER (681⭐), NSO-Blacklist, and more.
+### Merged upstream contributions
 
-**Collaborations:** Contributor to [291-Group/LAN-Orangutan](https://github.com/291-Group/LAN-Orangutan) (496⭐) — a lightweight network scanner with persistent device labeling, multi-network support, and Tailscale integration.
+| Project | Stars | Contribution |
+|---------|-------|-------------|
+| [`Lissy93/dashy`](https://github.com/Lissy93/dashy) | ⭐ 26k+ | Synology NAS deployment guide ([PR #567](https://github.com/Lissy93/dashy/pull/567)) |
+| [`louislam/uptime-kuma`](https://github.com/louislam/uptime-kuma) | ⭐ 90k+ | Swiss German (de-CH) translation via Weblate |
+| [`Core-2-Extreme/Video_player_for_3DS`](https://github.com/Core-2-Extreme/Video_player_for_3DS) | — | German language support ([PR #85](https://github.com/Core-2-Extreme/Video_player_for_3DS/pull/85)) |
+| [`kaisenlinux/kaisen-menu`](https://github.com/kaisenlinux/kaisen-menu) | — | German language string updates |
+
+### Open upstream contributions
+
+| Project | Contribution |
+|---------|-------------|
+| [`jordanhillis/pvekclean`](https://github.com/jordanhillis/pvekclean) | [PR #23](https://github.com/jordanhillis/pvekclean/pull/23) — ZFS boot support, systemd-boot detection, header cleanup, metapackage filter (fixes 6 open issues) |
+
+### Compliance & security reports
+
+| Project | Contribution |
+|---------|-------------|
+| [`swiss/trustbroker.swiss`](https://github.com/swiss/trustbroker.swiss) | [Issue #1](https://github.com/swiss/trustbroker.swiss/issues/1) — AGPL licensing report: missing project license header adaptation |
+
+### Original projects (AI-Assisted, Owner-Approved)
+
+| Project | Description |
+|---------|-------------|
+| [`0n1cOn3/LinuxDOOM`](https://github.com/0n1cOn3/LinuxDOOM) | DOOM port for Linux using OSS audio — vibeported under Hx guidance |
+| [`0n1cOn3/mumble-iphoneos-swift`](https://github.com/0n1cOn3/mumble-iphoneos-swift) | Swift-based Mumble client for iOS — vibeported from upstream |
+| [`IT-Kuny/HPE-G8-G9-Fan-Controller`](https://github.com/IT-Kuny/HPE-G8-G9-Fan-Controller) | Next.js UI + Dockerized fan control for HPE Gen8/Gen9 with modded iLO4 — vibeforked and enhanced |
+| [`IT-Kuny/HPE-Proliant-G8-G9-Autofan-Controller`](https://github.com/IT-Kuny/HPE-Proliant-G8-G9-Autofan-Controller) | Standalone thermal controller with per-sensor curves and adaptive cooling — vibeforked and enhanced |
+
+---
+
+## Personal GitHub
+
+**[@0n1cOn3](https://github.com/0n1cOn3)** — Security tools, spyware IOC blocklists (NSO/Intellexa/Paragon/Candiru — AI-Assisted Research), and more.
 
 Additional internal tools, Ansible roles, and more live on the self-hosted Git:
 
