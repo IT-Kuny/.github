@@ -74,8 +74,8 @@ These projects target real virtualization environments — from single-host Prox
 | Repository | Scope | Focus |
 |-----------|-------|-------|
 | [`Thinkpad-P16S-Kernel`](https://github.com/IT-Kuny/Thinkpad-P16S-Kernel) | Opinionated Linux kernel profile for the Lenovo ThinkPad P16s Gen4. Keeps NVMe-only internal storage, USB BOT/UAS disks, USB4/TB4, graphics, audio, camera, LAN, WLAN, BT, and trims unused SATA/SAS/FC/iSCSI paths to reduce complexity and attack surface. | Hardware-specific kernel config, IOMMU, VFIO, modern workstation hardening. |
-| [`HPE-G8-G9-Fan-Controller`](https://github.com/IT-Kuny/HPE-G8-G9-Fan-Controller) | Fan controller stack for modded iLO4 servers on HPE Gen8/Gen9 platforms. | Practical fan control UI/service for homelab ProLiant systems. |
-| [`HPE-Proliant-G8-G9-Autofan-Controller`](https://github.com/IT-Kuny/HPE-Proliant-G8-G9-Autofan-Controller) | Standalone thermal controller for HPE ProLiant Gen8/Gen9 with per-sensor curves and adaptive cooling logic. | Autonomous thermal management for quiet but safe operation. |
+| [`HPE-G8-G9-Fan-Controller`](https://github.com/IT-Kuny/HPE-G8-G9-Fan-Controller) | Fan controller stack for modded iLO4 servers on HPE Gen8/Gen9 platforms. Vibeforked + enhanced. | Practical fan control UI/service for homelab ProLiant systems. |
+| [`HPE-Proliant-G8-G9-Autofan-Controller`](https://github.com/IT-Kuny/HPE-Proliant-G8-G9-Autofan-Controller) | Standalone thermal controller for HPE ProLiant Gen8/Gen9 with per-sensor curves and adaptive cooling logic. Vibeforked + enhanced. | Autonomous thermal management for quiet but safe operation. |
 | [`UGREEN-DXP-FAN-NAS-Driver`](https://github.com/IT-Kuny/UGREEN-DXP-FAN-NAS-Driver) | Kernel driver for the system fan controller on UGREEN DXP NAS devices. Enables proper fan speed management under Linux where no official driver exists. | Hardware driver, NAS platform support, Linux kernel integration. |
 
 This is not a generic "one size fits all" kernel - it is a documented profile for a very specific platform and threat model.
@@ -175,20 +175,28 @@ If you care about owning your infrastructure, keeping control over your data, an
 |---------|-------------|
 | [`swiss/trustbroker.swiss`](https://github.com/swiss/trustbroker.swiss) | [Issue #1](https://github.com/swiss/trustbroker.swiss/issues/1) — AGPL licensing report: missing project license header adaptation |
 
-### Original projects (AI-Assisted, Owner-Approved)
+### Original projects — 0n1cOn3 (personal, AI-Assisted)
 
 | Project | Description |
 |---------|-------------|
 | [`0n1cOn3/LinuxDOOM`](https://github.com/0n1cOn3/LinuxDOOM) | DOOM port for Linux using OSS audio — vibeported under Hx guidance |
 | [`0n1cOn3/mumble-iphoneos-swift`](https://github.com/0n1cOn3/mumble-iphoneos-swift) | Swift-based Mumble client for iOS — vibeported from upstream |
-| [`IT-Kuny/HPE-G8-G9-Fan-Controller`](https://github.com/IT-Kuny/HPE-G8-G9-Fan-Controller) | Next.js UI + Dockerized fan control for HPE Gen8/Gen9 with modded iLO4 — vibeforked and enhanced |
-| [`IT-Kuny/HPE-Proliant-G8-G9-Autofan-Controller`](https://github.com/IT-Kuny/HPE-Proliant-G8-G9-Autofan-Controller) | Standalone thermal controller with per-sensor curves and adaptive cooling — vibeforked and enhanced |
+
+> HPE Fan Controllers (`IT-Kuny/HPE-G8-G9-Fan-Controller` and `IT-Kuny/HPE-Proliant-G8-G9-Autofan-Controller`) are vibeforked and enhanced IT-Kuny projects — see [Hardware section](#hardware--and-platform-specific-work) above.
 
 ---
 
-## Personal GitHub
+## Personal GitHub — 0n1cOn3
 
-**[@0n1cOn3](https://github.com/0n1cOn3)** — Security tools, spyware IOC blocklists (NSO/Intellexa/Paragon/Candiru — AI-Assisted Research), and more.
+**[@0n1cOn3](https://github.com/0n1cOn3)** is the personal GitHub account (separate from IT-Kuny). Focus: security tools, spyware IOC blocklists, and vibeported projects.
+
+**Notable repos:**
+- **Spyware IOC Blocklists** (NSO/Pegasus, Intellexa/Predator, Paragon/Graphite, Candiru/DevilsTongue) — AI-Assisted Research, Owner-Published
+- **LinuxDOOM** — DOOM port for Linux (OSS audio)
+- **mumble-iphoneos-swift** — Swift Mumble client port
+- **HandyScripts** — macOS/Windows/Linux utility scripts
+- **Adfilters** — Web filter lists
+- **401 followers**, Arctic Code Vault Contributor (2020)
 
 Additional internal tools, Ansible roles, and more live on the self-hosted Git:
 
