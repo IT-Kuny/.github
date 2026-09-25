@@ -1,6 +1,6 @@
 # IT-Kuny
 
-Infrastructure, automation, and self-hosting with a strong bias towards privacy, control, and Linux-first solutions.
+AI powered Infrastructure, automations, and self-hosting with a strong bias towards privacy, control, and Linux-first solutions.
 
 - 🇨🇭 Located in Switzerland
 - Focus: AI Agent agnostic private (like-a-ISP & NOC) data center infrastructure, Proxmox, kernel hardening, hardware-aware tooling and more
