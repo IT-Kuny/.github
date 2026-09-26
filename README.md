@@ -63,6 +63,16 @@ This is not a generic “one size fits all” kernel – it is a documented prof
 
 ---
 
+### Virtual displays & streaming
+
+| Repository | Scope | Focus |
+|-----------|-------|-------|
+| [`vkms-tv-secondscreen`](https://github.com/IT-Kuny/vkms-tv-secondscreen) | A real extended desktop on any TV: virtual second monitor on GNOME Wayland (EDID-enabled vkms DKMS module, coexistence patches) streamed to an Android TV via RustDesk. | Kernel module patching (DKMS), Mutter DisplayConfig D-Bus (GNOME 49), xdg-desktop-portal/PipeWire capture paths, zero-reboot live deployment. |
+
+Born from a broken Chromecast stack — ended with patched kernel modules, portal token archaeology and a 55-inch second screen. Documented end to end.
+
+---
+
 ### Upstream collaboration & forks
 
 | Repository | Origin | Purpose |
